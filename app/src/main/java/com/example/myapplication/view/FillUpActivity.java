@@ -18,7 +18,10 @@ public class FillUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_up);
+    }
 
+    public void submitClicked(View v) {
+        viewUtils.displayUnimplementedToast(v);
     }
 
 }

@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center|top"
         android:orientation="vertical">
 
         <EditText
@@ -28,6 +29,13 @@
             android:ems="10"
             android:hint="@string/amount"
             android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitClicked"
+            android:text="@string/submit" />
 
     </LinearLayout>
 

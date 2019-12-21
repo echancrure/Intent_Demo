@@ -25,15 +25,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void logoutClicked(View v ) {
-        displayUnimplementedToast();
+        viewUtils.displayUnimplementedToast(v);
     }
 
     public void optionsClicked(View v) {
-        displayUnimplementedToast();
-    }
-
-    private void displayUnimplementedToast() {
-        Toast toast = Toast.makeText(getApplicationContext(), "Not yet implemented", Toast.LENGTH_SHORT);
-        toast.show();
+        viewUtils.displayUnimplementedToast(v);
     }
  }
