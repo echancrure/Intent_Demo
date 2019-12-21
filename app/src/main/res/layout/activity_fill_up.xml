@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:importantForAutofill="noExcludeDescendants"
     tools:context=".view.FillUpActivity">
 
 
@@ -12,19 +13,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/price"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="numberDecimal" />
 
-            <EditText
-                android:id="@+id/price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="numberDecimal"
-                tools:text="price" />
-        </LinearLayout>
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/amount"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
