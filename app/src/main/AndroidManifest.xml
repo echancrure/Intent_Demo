@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.FillUp"
+            android:name=".view.FillUpActivity"
             android:label="@string/title_activity_fill_up"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity

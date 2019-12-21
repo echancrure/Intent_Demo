@@ -12,7 +12,7 @@ import android.view.View;
 
 import com.example.myapplication.R;
 
-public class FillUp extends AppCompatActivity {
+public class FillUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
