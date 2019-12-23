@@ -2,26 +2,37 @@ package com.example.myapplication.view;
 
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.EditText;
 
 import com.example.myapplication.R;
 
+import logic.PetrolTracker;
+
 public class FillUpActivity extends AppCompatActivity {
+    private EditText priceText;
+    private EditText amountText;
+    private EditText odometerText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_up);
+        priceText = findViewById(R.id.price);
+        amountText = findViewById(R.id.amount);
+        odometerText = findViewById(R.id.odometer);
     }
 
     public void submitClicked(View v) {
-        viewUtils.displayUnimplementedToast(v);
+        float price;
+        float amount;
+        int odometer;
+        price = Float.valueOf(this.priceText.getText().toString());
+        amount = Float.valueOf(this.amountText.getText().toString());
+        odometer = Integer.valueOf(this.odometerText.getText().toString());
+        PetrolTracker.getInstance().submitFillUp(price, amount, odometer);
     }
 
 }

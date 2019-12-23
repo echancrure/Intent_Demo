@@ -23,12 +23,20 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/amount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/amount"
             android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/odometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="odometer"
+            android:inputType="number" />
 
         <Button
             android:id="@+id/submit"
