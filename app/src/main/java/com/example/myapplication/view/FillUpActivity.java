@@ -29,10 +29,11 @@ public class FillUpActivity extends AppCompatActivity {
         float price;
         float amount;
         int odometer;
-        price = Float.valueOf(this.priceText.getText().toString());
-        amount = Float.valueOf(this.amountText.getText().toString());
-        odometer = Integer.valueOf(this.odometerText.getText().toString());
+        price = Float.parseFloat(this.priceText.getText().toString());
+        amount = Float.parseFloat(this.amountText.getText().toString());
+        odometer = Integer.parseInt(this.odometerText.getText().toString());
         PetrolTracker.getInstance().submitFillUp(price, amount, odometer);
+        this.finish();
     }
 
 }
