@@ -10,7 +10,7 @@ public class viewUtils {
      * @param v
      */
     public static void displayUnimplementedToast(View v) {
-        Toast toast = Toast.makeText(v.getContext(), "Not yet implemented", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(v.getContext(), "Class 14th December. Not yet implemented", Toast.LENGTH_SHORT);
         toast.show();
     }
 }
